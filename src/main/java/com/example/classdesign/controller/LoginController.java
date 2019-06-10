@@ -21,8 +21,9 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api")
 public class LoginController {
-    private static final String STUDENT_ROLE = "bb63e5f7e0f2ffae845c";
-    private static final String ADMIN_ROLE = "6983f953b49c88210cb9";
+    private static final String Tea_ROLE = "bb63e5f7e0f2ffae845c";
+    private static final String Mann_ROLE = "6983f953b49c88210cb9";
+    private static final String SuperMann_ROLE = "7a6s4fa4q19da7830c8a";
     @Autowired
     private UserService userService;
     @Autowired
@@ -43,10 +44,13 @@ public class LoginController {
                     // 在header创建自定义的权限
                     response.setHeader("token", token);
                     String role = null;
-                    if (u.getAuthority() == User.USER_AUTHORITY) {
-                        role = STUDENT_ROLE;
-                    } if (u.getAuthority() == User.ADMIN_AUTHORITY) {
-                        role = ADMIN_ROLE;
+                    if (u.getAuthority() == User.Tea_AUTHORITY) {
+                        role = Tea_ROLE;
+                    } if (u.getAuthority() == User.Mann_AUTHORITY) {
+                        role = Mann_ROLE;
+                    }
+                    if (u.getAuthority() == User.SuperMann_AUTHORITY) {
+                        role = SuperMann_ROLE;
                     }
                     response.setHeader("role", role);
                 }, () -> {

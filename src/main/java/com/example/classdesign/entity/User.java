@@ -20,13 +20,15 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    private String number;           /*编号*/
     private String name;
     private String pro;              /*职称*/
     private String intro;            /*介绍*/
     private String pnumber;          /*手机*/
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
-
+    // 在没有声明时默认为1
+    private int authority = 0;
     @Column(columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP",
             updatable = false,
             insertable = false)
