@@ -21,9 +21,9 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api")
 public class LoginController {
-    private static final String Tea_ROLE = "bb63e5f7e0f2ffae845c";
-    private static final String Mann_ROLE = "6983f953b49c88210cb9";
-    private static final String SuperMann_ROLE = "7a6s4fa4q19da7830c8a";
+    private static final String Tea_ROLE = "TEACHER";
+    private static final String Mann_ROLE = "MANNGER";
+    private static final String SuperMann_ROLE = "SUPERMANNGER";
     @Autowired
     private UserService userService;
     @Autowired
