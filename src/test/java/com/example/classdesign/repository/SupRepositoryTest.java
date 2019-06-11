@@ -37,6 +37,24 @@ public class SupRepositoryTest {
         user.setPro("教师");
         user.setPassword(passwordEncoder.encode(user.getNumber()));
         supRepository.addUser(user);
+
+        User user2 = new User("方立军");
+        log.debug("{}", user2.getInsertTime());
+        user2.setAuthority(User.Tea_AUTHORITY);
+        user2.setNumber("1004");
+        user2.setPnumber("18800463691");
+        user2.setIntro("zk");
+        user2.setPro("教师");
+        user2.setPassword(passwordEncoder.encode(user2.getNumber()));
+        supRepository.addUser(user2);
+    }
+
+
+
+    @Test
+    public void updateUserTest() {
+        User user = supRepository.updateUser(9, "张坤");
+        log.debug("{}", user.getName());
     }
 
     @Test

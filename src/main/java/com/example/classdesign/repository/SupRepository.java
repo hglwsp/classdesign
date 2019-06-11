@@ -23,6 +23,17 @@ public class SupRepository {
         return user;
     }
 
+    /**
+     * 更新指定ID用户的姓名
+     */
+    public User updateUser(int uid, String newName) {
+        User user = new User();
+        user.setId(uid);
+        User newUser = em.merge(user);
+        em.refresh(newUser);
+        newUser.setName(newName);
+        return newUser;
+    }
 
     /**
      * 删除用户，设置级联操作或手动删除相关地址
