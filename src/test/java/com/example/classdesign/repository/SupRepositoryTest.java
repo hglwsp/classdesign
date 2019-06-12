@@ -57,6 +57,7 @@ public class SupRepositoryTest {
         log.debug("{}", user.getName());
     }
 
+
     @Test
     public void remaveUserTest() {
         supRepository.remaveUser(5);
