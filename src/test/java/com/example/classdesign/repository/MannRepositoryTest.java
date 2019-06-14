@@ -1,5 +1,6 @@
 package com.example.classdesign.repository;
 
+import com.example.classdesign.entity.Monitor;
 import com.example.classdesign.entity.Work;
 import com.example.classdesign.repository.MannRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -9,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
-
+import java.time.LocalDateTime;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -25,12 +26,12 @@ public class MannRepositoryTest {
      */
     @Test
     public void addWork() {
-        Work work = new Work("兰兰最美");
+        Work work = new Work("兰兰1314");
         log.debug("{}", work.getInsertTime());
         work.setDetail("1314");
         work.setResp(1);
         work.setWarn(1);
-        work.setRespdetail("兰兰");
+        work.setRespdetail("朝朝暮暮");
         mannRepository.addWork(work);
     }
 
@@ -43,5 +44,19 @@ public class MannRepositoryTest {
     @Test
     public void remaveWork() {
         mannRepository.remaveWork(1);
+    }
+
+    @Test
+    public void addMonitor() {
+        Monitor monitor = new Monitor("1005");
+        monitor.setName("高数");
+        log.debug("{}", monitor.getInsertTime());
+        monitor.setUsername1("王胜朴");
+        monitor.setUsername2("刘翰勋");
+        monitor.setStarttime(LocalDateTime.of(2019, 6, 14, 15, 25));
+        monitor.setEndtime(LocalDateTime.of(2019, 6, 14, 17, 25));
+        monitor.setPlace("626");
+        monitor.setMan(2);
+        mannRepository.addMonitor(monitor);
     }
 }
