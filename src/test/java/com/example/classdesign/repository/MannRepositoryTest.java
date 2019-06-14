@@ -59,4 +59,16 @@ public class MannRepositoryTest {
         monitor.setMan(2);
         mannRepository.addMonitor(monitor);
     }
+
+    @Test
+    public void updateMonitor1() {
+        Monitor monitor = mannRepository.updateMonitor1(3, "王胜朴");
+        log.debug("{}", monitor.getUsername1());
+    }
+
+    @Test
+    public void updateMonitor2() {
+        Monitor monitor = mannRepository.updateMonitor2(3, "贺国兰");
+        log.debug("{}", monitor.getUsername2());
+    }
 }

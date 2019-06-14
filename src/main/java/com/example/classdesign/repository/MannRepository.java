@@ -55,4 +55,29 @@ public class MannRepository {
         return monitor;
     }
 
+
+    /**
+     * 更新指定ID的username1
+     */
+    public Monitor updateMonitor1(int uid, String newUsername1) {
+        Monitor monitor = new Monitor();
+        monitor.setId(uid);
+        Monitor newMonitor = em.merge(monitor);
+        em.refresh(newMonitor);
+        newMonitor.setUsername1(newUsername1);
+        return newMonitor;
+    }
+
+
+    /**
+     * 更新指定ID的username2
+     */
+    public Monitor updateMonitor2(int uid, String newUsername2) {
+        Monitor monitor = new Monitor();
+        monitor.setId(uid);
+        Monitor newMonitor = em.merge(monitor);
+        em.refresh(newMonitor);
+        newMonitor.setUsername2(newUsername2);
+        return newMonitor;
+    }
 }
