@@ -26,12 +26,13 @@ public class MannRepositoryTest {
      */
     @Test
     public void addWork() {
-        Work work = new Work("兰兰1314");
+        Work work = new Work("系统程序设计");
         log.debug("{}", work.getInsertTime());
-        work.setDetail("1314");
+        work.setDetail("100");
         work.setResp(1);
         work.setWarn(1);
-        work.setRespdetail("朝朝暮暮");
+        work.setRespdetail("刘翰勋");
+        work.setEndtime(LocalDateTime.of(2019, 6, 14, 17, 25));
         mannRepository.addWork(work);
     }
 

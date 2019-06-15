@@ -2,6 +2,7 @@ package com.example.classdesign.repository;
 
 import com.example.classdesign.entity.Work;
 import com.example.classdesign.repository.MannRepository;
+import com.example.classdesign.repository.MonitorRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -28,5 +29,7 @@ public class TeacherRepositoryTest {
             log.debug("{}", u.getName());
             log.debug("{}", u.getRespdetail());
         });
+
+
     }
 }

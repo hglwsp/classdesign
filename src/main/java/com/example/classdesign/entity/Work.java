@@ -24,6 +24,7 @@ public class Work {
             updatable = false,
             insertable = false)
     private LocalDateTime insertTime;
+    private LocalDateTime endtime;    /*结束时间*/
     private int resp;         /*1回复2未回复*/
     private int warn;         /*1按时完成不警告 2警告记录未按时完成*/
     private String respdetail;

@@ -2,6 +2,7 @@ package com.example.classdesign.repository;
 
 
 
+import com.example.classdesign.entity.Monitor;
 import com.example.classdesign.entity.Work;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -21,4 +22,8 @@ public interface TeacherRepository extends JpaRepository<Work, Integer> {
      */
     @Query("SELECT u FROM Work u  ")
     List<Work> list();
+
+
 }
+
+

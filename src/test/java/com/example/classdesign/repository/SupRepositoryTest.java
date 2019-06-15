@@ -28,24 +28,26 @@ public class SupRepositoryTest {
 
     @Test
     public void addUserTest() {
-        User user = new User("王胜朴");
+        User user = new User("张坤");
         log.debug("{}", user.getInsertTime());
         user.setAuthority(User.Tea_AUTHORITY);
-        user.setNumber("1003");
-        user.setPnumber("18800463691");
+        user.setNumber("1005");
+        user.setPnumber("123456789");
         user.setIntro("hgl");
         user.setPro("教师");
         user.setPassword(passwordEncoder.encode(user.getNumber()));
+        user.setState(2);
         supRepository.addUser(user);
 
-        User user2 = new User("方立军");
+        User user2 = new User("张锐");
         log.debug("{}", user2.getInsertTime());
         user2.setAuthority(User.Tea_AUTHORITY);
-        user2.setNumber("1004");
+        user2.setNumber("1006");
         user2.setPnumber("18800463691");
-        user2.setIntro("zk");
+        user2.setIntro("张坤");
         user2.setPro("教师");
         user2.setPassword(passwordEncoder.encode(user2.getNumber()));
+        user.setState(0);
         supRepository.addUser(user2);
     }
 

@@ -33,6 +33,7 @@ public class User {
             updatable = false,
             insertable = false)
     private LocalDateTime insertTime;
+    private int state;      /*0未分配，1已分配，2已完成*/
 
     public User(int id) {
         this.id = id;
