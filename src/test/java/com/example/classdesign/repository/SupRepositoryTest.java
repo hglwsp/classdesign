@@ -2,6 +2,7 @@ package com.example.classdesign.repository;
 
 import com.example.classdesign.entity.User;
 import com.example.classdesign.repository.SupRepository;
+import com.example.classdesign.service.TimeService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,6 +23,7 @@ public class SupRepositoryTest {
     private SupRepository supRepository;
     @Autowired
     private PasswordEncoder passwordEncoder;
+
     /**
      * 编写单元测试用例，测试方法实现的结果是否正确
      */
@@ -68,4 +70,5 @@ public class SupRepositoryTest {
 
 
     }
+
 
