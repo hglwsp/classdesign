@@ -57,7 +57,7 @@ public class MannRepository {
 
 
     /**
-     * 更新指定ID的username1
+     * 更新指定id的username1监考员1
      */
     public Monitor updateMonitor1(int uid, String newUsername1) {
         Monitor monitor = new Monitor();
@@ -70,7 +70,7 @@ public class MannRepository {
 
 
     /**
-     * 更新指定ID的username2
+     * 更新指定ID的username2监考员2
      */
     public Monitor updateMonitor2(int uid, String newUsername2) {
         Monitor monitor = new Monitor();

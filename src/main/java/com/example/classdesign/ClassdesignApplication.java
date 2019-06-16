@@ -8,11 +8,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-
+import org.springframework.scheduling.annotation.EnableScheduling;
 import javax.annotation.PostConstruct;
 import java.util.TimeZone;
 
 @SpringBootApplication
+@EnableScheduling
 @EnableJpaRepositories(repositoryBaseClass = CustomizedRespoistoryImpl.class)
 public class ClassdesignApplication {
     @PostConstruct

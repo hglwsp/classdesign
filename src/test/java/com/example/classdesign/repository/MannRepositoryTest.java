@@ -69,7 +69,7 @@ public class MannRepositoryTest {
 
     @Test
     public void updateMonitor2() {
-        Monitor monitor = mannRepository.updateMonitor2(3, "贺国兰");
+        Monitor monitor = mannRepository.updateMonitor2(2, "刘翰勋");
         log.debug("{}", monitor.getUsername2());
     }
 }
