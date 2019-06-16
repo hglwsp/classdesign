@@ -49,14 +49,14 @@ public class MannRepositoryTest {
 
     @Test
     public void addMonitor() {
-        Monitor monitor = new Monitor("1005");
-        monitor.setName("高数");
+        Monitor monitor = new Monitor("1007");
+        monitor.setName("Python");
         log.debug("{}", monitor.getInsertTime());
         monitor.setUsername1("王胜朴");
         monitor.setUsername2("刘翰勋");
-        monitor.setStarttime(LocalDateTime.of(2019, 6, 14, 15, 25));
-        monitor.setEndtime(LocalDateTime.of(2019, 6, 14, 17, 25));
-        monitor.setPlace("626");
+        monitor.setStarttime(LocalDateTime.of(2019, 6, 18, 15, 25));
+        monitor.setEndtime(LocalDateTime.of(2019, 6, 18, 17, 25));
+        monitor.setPlace("753");
         monitor.setMan(2);
         mannRepository.addMonitor(monitor);
     }

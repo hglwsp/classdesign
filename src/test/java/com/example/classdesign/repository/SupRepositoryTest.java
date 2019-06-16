@@ -33,7 +33,7 @@ public class SupRepositoryTest {
         User user = new User("张坤");
         log.debug("{}", user.getInsertTime());
         user.setAuthority(User.Tea_AUTHORITY);
-        user.setNumber("1005");
+        user.setNumber("1015");
         user.setPnumber("123456789");
         user.setIntro("hgl");
         user.setPro("教师");
