@@ -23,7 +23,7 @@ public class TeacherRepositoryTest {
 
 
     @Test
-    public void userRepTest() {
+    public void userRepTest() {     /*用户查看其他人任务信息*/
         teacherRepository.list()
         .forEach(u -> {
             log.debug("{}", u.getName());

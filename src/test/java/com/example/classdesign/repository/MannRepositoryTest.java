@@ -25,7 +25,7 @@ public class MannRepositoryTest {
      * 编写单元测试用例，测试方法实现的结果是否正确
      */
     @Test
-    public void addWork() {
+    public void addWork() {                 /*管理员增加任务*/
         Work work = new Work("系统程序设计");
         log.debug("{}", work.getInsertTime());
         work.setDetail("100");
@@ -37,18 +37,18 @@ public class MannRepositoryTest {
     }
 
     @Test
-    public void updateWork() {
+    public void updateWork() {                /*管理员修改任务*/
         Work work = mannRepository.updateWork(2, "王胜朴");
         log.debug("{}", work.getDetail());
     }
 
     @Test
-    public void remaveWork() {
-        mannRepository.remaveWork(1);
+    public void remaveWork() {              /*管理员删除任务*/
+        mannRepository.remaveWork(2);
     }
 
     @Test
-    public void addMonitor() {
+    public void addMonitor() {         /*管理员添加监考信息*/
         Monitor monitor = new Monitor("1008");
         monitor.setName("系统程序设计");
         log.debug("{}", monitor.getInsertTime());
@@ -62,14 +62,14 @@ public class MannRepositoryTest {
     }
 
     @Test
-    public void updateMonitor1() {
-        Monitor monitor = mannRepository.updateMonitor1(4, "张坤");
+    public void updateMonitor1() {        /*管理员修改监考人员*/
+        Monitor monitor = mannRepository.updateMonitor1(4, "张锐");
         log.debug("{}", monitor.getUsername1());
     }
 
     @Test
     public void updateMonitor2() {
-        Monitor monitor = mannRepository.updateMonitor2(2, "刘翰勋");
+        Monitor monitor = mannRepository.updateMonitor2(4, "郭鹏鑫");
         log.debug("{}", monitor.getUsername2());
     }
 }
