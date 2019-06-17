@@ -26,19 +26,19 @@ public class MannRepositoryTest {
      */
     @Test
     public void addWork() {                 /*管理员增加任务*/
-        Work work = new Work("系统程序设计");
+        Work work = new Work("C语言考试");
         log.debug("{}", work.getInsertTime());
-        work.setDetail("100");
+        work.setDetail("需要监考");
         work.setResp(1);
         work.setWarn(1);
-        work.setRespdetail("刘翰勋");
+        work.setRespdetail("张坤");
         work.setEndtime(LocalDateTime.of(2019, 6, 14, 17, 25));
         mannRepository.addWork(work);
     }
 
     @Test
     public void updateWork() {                /*管理员修改任务*/
-        Work work = mannRepository.updateWork(2, "王胜朴");
+        Work work = mannRepository.updateWork(2, "系统程序设计");
         log.debug("{}", work.getDetail());
     }
 

@@ -30,23 +30,23 @@ public class SupRepositoryTest {
 
     @Test
     public void addUserTest() {           /*超级管理员添加用户*/
-        User user = new User("王一");
+        User user = new User("王三");
         log.debug("{}", user.getInsertTime());
         user.setAuthority(User.Tea_AUTHORITY);
         user.setNumber("1007");
         user.setPnumber("123456");
-        user.setIntro("王一在吃饭");
+        user.setIntro("王三在想她");
         user.setPro("教师");
         user.setPassword(passwordEncoder.encode(user.getNumber()));
         user.setState(2);
         supRepository.addUser(user);
 
-        User user2 = new User("王二");
+        User user2 = new User("王四");
         log.debug("{}", user2.getInsertTime());
         user2.setAuthority(User.Mann_AUTHORITY);
         user2.setNumber("1008");
         user2.setPnumber("18800463691");
-        user2.setIntro("王二在睡觉");
+        user2.setIntro("王四在睡觉");
         user2.setPro("教授");
         user2.setPassword(passwordEncoder.encode(user2.getNumber()));
         user.setState(1);
@@ -57,14 +57,14 @@ public class SupRepositoryTest {
 
     @Test
     public void updateUserTest() {           /*超级管理员更改信息，权限*/
-        User user = supRepository.updateUser(8, 1, "方立军");
+        User user = supRepository.updateUser(12, 1, "张坤");
         log.debug("{}", user.getName());
     }
 
 
     @Test
     public void remaveUserTest() {             /*超级管理员删除用户*/
-        supRepository.remaveUser(6);
+        supRepository.remaveUser(11);
     }
 
 

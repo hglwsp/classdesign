@@ -2,6 +2,196 @@ POST http://localhost:8080/api/login
 Content-Type: application/json
 
 {
+  "number": "1005",
+  "password": "1005"
+}
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1007",
+  "password": "1006"
+}
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1001",
+  "password": "1001"
+}
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1005",
+  "password": "1005"
+}
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1007",
+  "password": "1006"
+}
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1001",
+  "password": "1001"
+}
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+/*超管*/:
+{    :
+  "number": "1001",
+  "password": "1001"
+}:
+
+<> 2019-06-17T122834.400.html
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1005",
+  "password": "1005"
+}
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1007",
+  "password": "1006"
+}
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1007",
+  "password": "1007"
+}
+
+<> 2019-06-17T122731.401.json
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1006",
+  "password": "1006"
+}
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1005",
+  "password": "1005"
+}
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1007",
+  "password": "1007"
+}
+
+<> 2019-06-17T122617.401.json
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1005",
+  "password": "1005"
+}
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1005",
+  "password": "1001"
+}
+
+<> 2019-06-17T122549.401.json
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1001",
+  "password": "1001"
+}
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1003",
+  "password": "1001"
+}
+
+<> 2019-06-17T122515.401.json
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1001",
+  "password": "1001"
+}
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
   "number": "1001",
   "password": "1001"
 }
@@ -346,196 +536,6 @@ Content-Type: application/json
 {
   "number": "1001",
   "password": "1000"
-}
-
-###
-
-POST http://localhost:8080/api/login
-Content-Type: application/json
-
-{
-  "number": "1001",
-  "password": "1000"
-}
-
-###
-
-POST http://localhost:8080/api/login
-Content-Type: application/json
-
-{
-  "number": "1001",
-  "password": "1000"
-}
-
-###
-
-POST http://localhost:8080/api/login
-Content-Type: application/json
-
-{
-  "number": "1001",
-  "password": "1001"
-}
-
-###
-
-POST http://localhost:8080/api/login
-Content-Type: application/json
-
-{
-  "number": "1001",
-  "password": "654321"
-}
-
-<> 2019-06-10T085434.401.json
-
-###
-
-POST http://localhost:8080/api/login
-Content-Type: application/json
-
-{
-  "number": "1001",
-  "password": "1001"
-}
-
-###
-
-POST http://localhost:8080/api/login
-Content-Type: application/json
-
-{
-  "number": "1001",
-  "password": "928626"
-}
-
-<> 2019-06-10T084831.401.json
-
-###
-
-POST http://localhost:8080/api/login
-Content-Type: application/json
-
-{
-  "number": "1001",
-  "password": "928626"
-}
-
-<> 2019-06-10T084711.401.json
-
-###
-
-POST http://localhost:8080/api/login
-Content-Type: application/json
-
-{
-  "number": "1001",
-  "password": "928626"
-}
-
-###
-
-POST http://localhost:8080/api/login
-Content-Type: application/json
-
-{
-  "number": "1001",
-  "password": "928626"
-}
-
-###
-
-POST http://localhost:8080/api/login
-Content-Type: application/json
-
-{
-  "number": "1001",
-  "password": "928626"
-}
-
-###
-
-POST http://localhost:8080/api/login
-Content-Type: application/json
-
-{
-  "number": "1001",
-  "password": "928626"
-}
-
-###
-
-POST http://localhost:8080/api/login
-Content-Type: application/json
-
-{
-  "number": "1001",
-  "password": "928626"
-}
-
-###
-
-POST http://localhost:8080/api/login
-Content-Type: application/json
-
-{
-  "number": "1001",
-  "password": "1001"
-}
-
-<> 2019-06-10T075100.401.json
-
-###
-
-POST http://localhost:8080/api/login
-Content-Type: application/json
-
-{
-  "number": "1001",
-  "password": "928626"
-}
-
-<> 2019-06-10T075048.401.json
-
-###
-
-POST http://localhost:8080/api/login
-Content-Type: application/json
-
-{
-  "number": "1001",
-  "password": "928626"
-}
-
-###
-
-POST http://localhost:8080/api/login
-Content-Type: application/json
-
-{
-  "number": "1001",
-  "password": "928626"
-}
-
-###
-
-POST http://localhost:8080/api/login
-Content-Type: application/json
-
-{
-  "number": "1001",
-  "password": "928626"
-}
-
-###
-
-POST http://localhost:8080/api/login
-Content-Type: application/json
-
-{
-  "number": "1001",
-  "password": "928626"
 }
 
 ###

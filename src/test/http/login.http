@@ -7,3 +7,23 @@ Content-Type: application/json
 }
 
 ###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1007",
+  "password": "1006"
+}
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1005",
+  "password": "1005"
+}
+
+###

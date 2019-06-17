@@ -1,7 +1,0 @@
-{
-  "timestamp": "2019-06-10T12:54:34.126+0000",
-  "status": 401,
-  "error": "Unauthorized",
-  "message": "用户名或密码错误",
-  "path": "/api/login"
-}
