@@ -26,11 +26,12 @@ public class SupRepository {
     /**
      * 更新指定ID用户的姓名
      */
-    public User updateUser(int uid, String newName) {
+    public User updateUser(int uid, int newAuthority,String newName) {
         User user = new User();
         user.setId(uid);
         User newUser = em.merge(user);
         em.refresh(newUser);
+        newUser.setAuthority(newAuthority);
         newUser.setName(newName);
         return newUser;
     }

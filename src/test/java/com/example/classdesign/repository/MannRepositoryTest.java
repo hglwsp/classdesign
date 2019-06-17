@@ -49,21 +49,21 @@ public class MannRepositoryTest {
 
     @Test
     public void addMonitor() {
-        Monitor monitor = new Monitor("1007");
-        monitor.setName("Python");
+        Monitor monitor = new Monitor("1008");
+        monitor.setName("系统程序设计");
         log.debug("{}", monitor.getInsertTime());
         monitor.setUsername1("王胜朴");
-        monitor.setUsername2("刘翰勋");
+        monitor.setUsername2("贺国兰");
         monitor.setStarttime(LocalDateTime.of(2019, 6, 18, 15, 25));
         monitor.setEndtime(LocalDateTime.of(2019, 6, 18, 17, 25));
-        monitor.setPlace("753");
+        monitor.setPlace("748");
         monitor.setMan(2);
         mannRepository.addMonitor(monitor);
     }
 
     @Test
     public void updateMonitor1() {
-        Monitor monitor = mannRepository.updateMonitor1(3, "王胜朴");
+        Monitor monitor = mannRepository.updateMonitor1(4, "张坤");
         log.debug("{}", monitor.getUsername1());
     }
 

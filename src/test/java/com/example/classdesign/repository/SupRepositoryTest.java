@@ -30,26 +30,26 @@ public class SupRepositoryTest {
 
     @Test
     public void addUserTest() {
-        User user = new User("张坤");
+        User user = new User("王一");
         log.debug("{}", user.getInsertTime());
         user.setAuthority(User.Tea_AUTHORITY);
-        user.setNumber("1015");
-        user.setPnumber("123456789");
-        user.setIntro("hgl");
+        user.setNumber("1005");
+        user.setPnumber("123456");
+        user.setIntro("王一在吃饭");
         user.setPro("教师");
         user.setPassword(passwordEncoder.encode(user.getNumber()));
         user.setState(2);
         supRepository.addUser(user);
 
-        User user2 = new User("张锐");
+        User user2 = new User("王二");
         log.debug("{}", user2.getInsertTime());
-        user2.setAuthority(User.Tea_AUTHORITY);
+        user2.setAuthority(User.Mann_AUTHORITY);
         user2.setNumber("1006");
         user2.setPnumber("18800463691");
-        user2.setIntro("张坤");
-        user2.setPro("教师");
+        user2.setIntro("王二在睡觉");
+        user2.setPro("教授");
         user2.setPassword(passwordEncoder.encode(user2.getNumber()));
-        user.setState(0);
+        user.setState(1);
         supRepository.addUser(user2);
     }
 
@@ -57,14 +57,14 @@ public class SupRepositoryTest {
 
     @Test
     public void updateUserTest() {
-        User user = supRepository.updateUser(9, "张坤");
+        User user = supRepository.updateUser(8, 1, "方立军");
         log.debug("{}", user.getName());
     }
 
 
     @Test
     public void remaveUserTest() {
-        supRepository.remaveUser(5);
+        supRepository.remaveUser(6);
     }
 
 
